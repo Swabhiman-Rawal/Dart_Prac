@@ -1,0 +1,161 @@
+void main() {
+  List<String> programmingLanguage = ['c', 'C++', 'Dart', 'Python'];
+String name = "Swabhiman Rawal";
+//String adress = "Nepalgunj";
+  int age = 19; 
+ double salary = 15000.00;
+ bool ismarried = false;
+  
+  
+  
+  // DateTime DOB = DateTime.now();
+
+  DateTime dob = DateTime(2002, 02, 22);
+
+  print("My name is $name. My age is $age. My Salary is $salary. I am married = $ismarried. My fav pLanguages are $programmingLanguage. My DOB is $dob");
+
+ // print("The year u were born is ${DOB.year}");
+ // print("My Favourite programming language  is ${programmingLanguage}");
+}
+
+void main() {
+
+  List<String> programmingLanguage = ['c', 'C++', 'Dart', 'Python'];
+  
+  List<int> price = [100, 200, 300, 400, 500, 600, 700, 800];
+
+  programmingLanguage.add("Golang");
+
+  print(programmingLanguage.length);
+
+  print(" Course Name:${programmingLanguage[4]}: Rs.${price[0]}");
+
+
+}
+ void main(){
+   //04Map.dart
+
+    Map<String,double> _courselist  = {
+      "C":500, "C++":200
+    };
+  print(_courselist["C"]);
+
+ }
+void main() {
+//  List<String> programmingLanguage = ['c', 'C++', 'Dart', 'Python'];
+/*String name = "Swabhiman Rawal";
+//String adress = "Nepalgunj";
+  int age = 19; 
+ double salary = 15000.00;
+ bool ismarried = false;*/
+
+  // DateTime DOB = DateTime.now();
+
+  // DateTime dob = DateTime(2002, 02, 22);
+
+//  print("My name is $name. My age is $age. My Salary is $salary. I am married = $ismarried. My fav pLanguages are $programmingLanguage. My DOB is $dob");
+
+  // print("The year u were born is ${DOB.year}");
+  // print("My Favourite programming language  is ${programmingLanguage}");
+// List<String> programminglanguage = ['c', 'C++', 'Dart', 'Python'];
+// print (programminglanguage.length);
+
+ 
+
+// var name = "Swabhi Rawal";
+  //var address = "Pokhara";
+  //var services = ["App Development","Machine Learning","Programming"];
+
+//print("$name , $address ,\n $services");
+  // for (int i = 100; i >= 1; i--) {
+  //   print(i);
+  // }
+}
+
+void main() {
+  int age = showdefaultAge();
+  print("The default age is ${age}");
+  String Name = showdefaultName();
+  print(Name);
+
+  newAdd(10, 22, 50);
+}
+
+int showdefaultAge() {
+  return 3;
+}
+
+String showdefaultName() {
+  return "Swabhiman Rawal";
+}
+
+void newAdd(a, b, [c]) {
+  print(a);
+  print(b);
+  print(c);
+}
+
+void main() {
+  Map<String, double> courses = {
+    "C": 1000,
+    "Java": 2000,
+    "Flutter": 6000,
+  };
+
+  courses.forEach((k, v) {
+    print("$k price is $v");
+  });
+}
+
+//OOP
+class Addup {
+//prop
+
+  int a;
+  int b;
+
+//Constructor
+ Addup(this.a, this.b);
+
+//Method/Function
+  void add() {
+    print(a + b);
+  }
+}
+
+void main() {
+  Addup a = new Addup(10, 25);
+  a.add();
+}
+
+class Human {
+// Properties
+
+  var id;
+  String name;
+  String address;
+  DateTime birthdate;
+  bool isMarried;
+  //Ctor
+  Human(this.id, this.name, this.address, this.birthdate, this.isMarried);
+
+  void showHumanDetails() {
+    print(
+        "ID is $id. Name is $name, lives in $address, Birthdate is $birthdate. Married: $isMarried");
+  }
+}
+
+void main() {
+  Human Swabhiman = Human(
+      "20049080", "Swabhiman", "Sitalnagar", DateTime(2059 - 11 - 09), false);
+  Human Abhishek = Human(
+      "20049070", "Abhishek", "Sitalnagar", DateTime(2003 - 22 - 02), true);
+  Swabhiman.showHumanDetails();
+  Abhishek.showHumanDetails();
+}
+
+void main() {
+  String name = "Swabhiman Rawal";
+ // print("Hello ${name}");
+ print(name);
+}
